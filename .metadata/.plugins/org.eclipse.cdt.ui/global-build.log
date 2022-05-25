@@ -44,3 +44,1328 @@ Finished building: default.size.stdout
  
 Finished building: test_esp8266_nodemcu_v3_connection.list
  
+21:12:00 **** Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411retx.d" -MT"Core/Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411retx.o" "../Core/Startup/startup_stm32f411retx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:31: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  101 |    HAL_UART_Transmit(&huart1, num, 4, 1000);
+      |                               ^~~
+      |                               |
+      |                               int
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:102:8: error: 'data' undeclared (first use in this function)
+  102 |    if (data==69) data=420;
+      |        ^~~~
+../Core/Src/main.c:102:8: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:12:21 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:31: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  101 |    HAL_UART_Transmit(&huart1, num, 4, 1000);
+      |                               ^~~
+      |                               |
+      |                               int
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  11116	     20	   1708	  12844	   322c	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+21:12:33 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-size   test_uart_esp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11116	     20	   1708	  12844	   322c	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+21:19:39 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-size   test_uart_esp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11116	     20	   1708	  12844	   322c	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+21:21:55 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:31: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  101 |    HAL_UART_Transmit(&huart1, num, sizeof(num), 1000);
+      |                               ^~~
+      |                               |
+      |                               int
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  11116	     20	   1708	  12844	   322c	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+21:23:08 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:31: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  101 |    HAL_UART_Transmit(&huart1, num, sizeof(num), 1000);
+      |                               ^~~
+      |                               |
+      |                               int
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:102:31: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  102 |    HAL_UART_Transmit(&huart2, num, sizeof(num), 1000);
+      |                               ^~~
+      |                               |
+      |                               int
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  11136	     20	   1708	  12864	   3240	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+21:24:37 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  101 |    HAL_UART_Transmit(&huart1, &num, sizeof(num), 1000);
+      |                               ^~~~
+      |                               |
+      |                               int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:102:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  102 |    HAL_UART_Transmit(&huart2, &num, sizeof(num), 1000);
+      |                               ^~~~
+      |                               |
+      |                               int *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  11136	     20	   1708	  12864	   3240	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+21:27:14 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, '%d', num)
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: multi-character character constant [-Wmultichar]
+  102 |    sprintf(buffer, '%d', num)
+      |                    ^~~~
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:102:30: error: expected ';' before 'HAL_UART_Transmit'
+  102 |    sprintf(buffer, '%d', num)
+      |                              ^
+      |                              ;
+  103 | 
+  104 |    HAL_UART_Transmit(&huart1, (uint8_t *)buffer, strlen(buffer), 1000)
+      |    ~~~~~~~~~~~~~~~~~          
+../Core/Src/main.c:107:4: error: 'else' without a previous 'if'
+  107 |    else if (num==420) num=42069;
+      |    ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:27:25 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, '%d', num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: multi-character character constant [-Wmultichar]
+  102 |    sprintf(buffer, '%d', num);
+      |                    ^~~~
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:104:71: error: expected ';' before 'HAL_UART_Transmit'
+  104 |    HAL_UART_Transmit(&huart1, (uint8_t *)buffer, strlen(buffer), 1000)
+      |                                                                       ^
+      |                                                                       ;
+  105 |    HAL_UART_Transmit(&huart2, (uint8_t *)buffer, strlen(buffer), 1000)
+      |    ~~~~~~~~~~~~~~~~~                                                   
+../Core/Src/main.c:107:4: error: 'else' without a previous 'if'
+  107 |    else if (num==420) num=42069;
+      |    ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:27:29 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, '%d', num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: multi-character character constant [-Wmultichar]
+  102 |    sprintf(buffer, '%d', num);
+      |                    ^~~~
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13784	    120	   1728	  15632	   3d10	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+21:29:39 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, '%d', num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: multi-character character constant [-Wmultichar]
+  102 |    sprintf(buffer, '%d', num);
+      |                    ^~~~
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:106:21: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '420' to '164' [-Woverflow]
+  106 |    if (num==69) num=420;
+      |                     ^~~
+../Core/Src/main.c:107:27: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '42069' to '85' [-Woverflow]
+  107 |    else if (num==420) num=42069;
+      |                           ^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13776	    120	   1728	  15624	   3d08	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+21:30:21 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, '%d', num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: multi-character character constant [-Wmultichar]
+  102 |    sprintf(buffer, '%d', num);
+      |                    ^~~~
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:106:21: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '420' to '164' [-Woverflow]
+  106 |    if (num==69) num=420;
+      |                     ^~~
+../Core/Src/main.c:107:27: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '42069' to '85' [-Woverflow]
+  107 |    else if (num==420) num=42069;
+      |                           ^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13740	    120	   1728	  15588	   3ce4	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+21:31:05 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, '%d', num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: multi-character character constant [-Wmultichar]
+  102 |    sprintf(buffer, '%d', num);
+      |                    ^~~~
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:106:21: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '420' to '164' [-Woverflow]
+  106 |    if (num==69) num=420;
+      |                     ^~~
+../Core/Src/main.c:107:27: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '42069' to '85' [-Woverflow]
+  107 |    else if (num==420) num=42069;
+      |                           ^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13740	    120	   1728	  15588	   3ce4	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:47:48 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, '%d\r\n', num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: multi-character character constant [-Wmultichar]
+  102 |    sprintf(buffer, '%d\r\n', num);
+      |                    ^~~~~~~~
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:104:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  104 |    HAL_UART_Transmit(&huart1, &buffer, strlen(buffer), 1000);
+      |                               ^~~~~~~
+      |                               |
+      |                               char (*)[100]
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[100]'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  105 |    HAL_UART_Transmit(&huart2, &buffer, strlen(buffer), 1000);
+      |                               ^~~~~~~
+      |                               |
+      |                               char (*)[100]
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[100]'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:106:21: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '420' to '164' [-Woverflow]
+  106 |    if (num==69) num=420;
+      |                     ^~~
+../Core/Src/main.c:107:27: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '42069' to '85' [-Woverflow]
+  107 |    else if (num==420) num=42069;
+      |                           ^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13780	    120	   1728	  15628	   3d0c	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:48:02 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-size   test_uart_esp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13780	    120	   1728	  15628	   3d0c	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+00:49:01 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, '%d\r\n', num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: multi-character character constant [-Wmultichar]
+  102 |    sprintf(buffer, '%d\r\n', num);
+      |                    ^~~~~~~~
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:104:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  104 |    HAL_UART_Transmit(&huart1, &buffer, strlen(buffer), 1000);
+      |                               ^~~~~~~
+      |                               |
+      |                               char (*)[100]
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[100]'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  105 |    HAL_UART_Transmit(&huart2, &buffer, strlen(buffer), 1000);
+      |                               ^~~~~~~
+      |                               |
+      |                               char (*)[100]
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char (*)[100]'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13788	    120	   1728	  15636	   3d14	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:49:56 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, '%d\r\n', num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: multi-character character constant [-Wmultichar]
+  102 |    sprintf(buffer, '%d\r\n', num);
+      |                    ^~~~~~~~
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13752	    120	   1728	  15600	   3cf0	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:50:55 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:102:20: warning: passing argument 2 of 'sprintf' makes pointer from integer without a cast [-Wint-conversion]
+  102 |    sprintf(buffer, num);
+      |                    ^~~
+      |                    |
+      |                    int
+../Core/Src/main.c:102:20: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13748	    120	   1728	  15596	   3cec	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:51:52 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer, "test");
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13756	    120	   1728	  15604	   3cf4	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:54:42 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  103 |    sprintf(buffer, test);
+      |    ^~~~~~~
+../Core/Src/main.c:103:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:106:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  106 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13776	    120	   1728	  15624	   3d08	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:55:24 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  103 |    sprintf(buffer, test);
+      |    ^~~~~~~
+../Core/Src/main.c:103:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:108:31: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  108 |    HAL_UART_Transmit(&huart2, 123, sizeof(123), 1000);
+      |                               ^~~
+      |                               |
+      |                               int
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'int'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13760	    120	   1728	  15608	   3cf8	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:56:20 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  103 |    sprintf(buffer, test);
+      |    ^~~~~~~
+../Core/Src/main.c:103:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:108:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  108 |    HAL_UART_Transmit(&huart2, test, sizeof(test), 1000);
+      |                               ^~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13760	    120	   1728	  15608	   3cf8	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:57:01 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  103 |    sprintf(buffer, test);
+      |    ^~~~~~~
+../Core/Src/main.c:103:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:108:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  108 |    HAL_UART_Transmit(&huart2, test, sizeof(test), 1000);
+      |                               ^~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13776	    120	   1728	  15624	   3d08	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:58:07 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  107 |    HAL_UART_Transmit(&huart2, test, sizeof(test), 1000);
+      |                               ^~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:108:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  108 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  11160	     20	   1708	  12888	   3258	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+00:59:18 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  107 |    sprintf(test,"%d",69);
+      |    ^~~~~~~
+../Core/Src/main.c:107:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:109:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  109 |    HAL_UART_Transmit(&huart2, test, sizeof(test), 1000);
+      |                               ^~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:101:9: warning: unused variable 'buffer' [-Wunused-variable]
+  101 |    char buffer[100];
+      |         ^~~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13768	    120	   1728	  15616	   3d00	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:01:07 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  107 |    sprintf(test,"%d",69);
+      |    ^~~~~~~
+../Core/Src/main.c:107:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:109:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  109 |    HAL_UART_Transmit(&huart2, test, sizeof(test), 1000);
+      |                               ^~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:101:9: warning: unused variable 'buffer' [-Wunused-variable]
+  101 |    char buffer[100];
+      |         ^~~~~~
+../Core/Src/main.c:107:18: warning: '%d' directive writing 2 bytes into a region of size 1 [-Wformat-overflow=]
+  107 |    sprintf(test,"%d",69);
+      |                  ^~
+../Core/Src/main.c:107:4: note: 'sprintf' output 3 bytes into a destination of size 1
+  107 |    sprintf(test,"%d",69);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13748	    120	   1728	  15596	   3cec	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:01:54 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  107 |    sprintf(test,"%d",69);
+      |    ^~~~~~~
+../Core/Src/main.c:107:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:109:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  109 |    HAL_UART_Transmit(&huart2, test, sizeof(test), 1000);
+      |                               ^~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:101:9: warning: unused variable 'buffer' [-Wunused-variable]
+  101 |    char buffer[100];
+      |         ^~~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13740	    120	   1728	  15588	   3ce4	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:02:42 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  107 |    sprintf(test,"%d",69);
+      |    ^~~~~~~
+../Core/Src/main.c:107:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:109:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  109 |    HAL_UART_Transmit(&huart2, test, sizeof(test), 1000);
+      |                               ^~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:101:9: warning: unused variable 'buffer' [-Wunused-variable]
+  101 |    char buffer[100];
+      |         ^~~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13756	    120	   1728	  15604	   3cf4	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:03:45 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer,"%d",num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13772	    120	   1728	  15620	   3d04	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:04:23 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer,"%d ",num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13772	    120	   1728	  15620	   3d04	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:06:33 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer,"%d",num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13772	    120	   1728	  15620	   3d04	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:13:30 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer,"%d ",num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13772	    120	   1728	  15620	   3d04	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:19:05 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer,"%d",num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+../Core/Src/main.c:104:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  104 |    HAL_UART_Transmit(&huart1, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:105:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  105 |    HAL_UART_Transmit(&huart2, buffer, sizeof(buffer), 1000);
+      |                               ^~~~~~
+      |                               |
+      |                               char *
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:407,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:722:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+  722 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13772	    120	   1728	  15620	   3d04	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:26:54 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer,"%d",num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13772	    120	   1728	  15620	   3d04	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
+01:37:55 **** Incremental Build of configuration Debug for project test_uart_esp ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  102 |    sprintf(buffer,"%d",num);
+      |    ^~~~~~~
+../Core/Src/main.c:102:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:22:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   21 | #include "string.h"
+  +++ |+#include <stdio.h>
+   22 | /* Private includes ----------------------------------------------------------*/
+arm-none-eabi-gcc -o "test_uart_esp.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Touch\STM32CubeIDE\aircontrol\test_uart_esp\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_uart_esp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: test_uart_esp.elf
+ 
+arm-none-eabi-size   test_uart_esp.elf 
+arm-none-eabi-objdump -h -S  test_uart_esp.elf  > "test_uart_esp.list"
+   text	   data	    bss	    dec	    hex	filename
+  13764	    120	   1728	  15612	   3cfc	test_uart_esp.elf
+Finished building: default.size.stdout
+ 
+Finished building: test_uart_esp.list
+ 
