@@ -1,9 +1,9 @@
-08:59:20 **** Incremental Build of configuration Debug for project stm_proj_demo1 ****
+20:16:02 **** Incremental Build of configuration Debug for project stm_proj_demo1 ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:108:43: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
-  108 |     HAL_UART_Transmit(&huart2, s,  strlen(s), 1000);
+../Core/Src/main.c:109:43: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  109 |     HAL_UART_Transmit(&huart2, s,  strlen(s), 1000);
       |                                           ^
       |                                           |
       |                                           uint8_t * {aka unsigned char *}
@@ -11,35 +11,26 @@ In file included from ../Core/Src/main.c:21:
 c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    41 | size_t  strlen (const char *);
       |                 ^~~~~~~~~~~~
-../Core/Src/main.c:114:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
-  114 |      HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
-      |                                              ^~~
-      |                                              |
-      |                                              uint8_t * {aka unsigned char *}
+../Core/Src/main.c:113:47: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  113 |     HAL_UART_Transmit(&huart2, enter,  strlen(enter), 1000);
+      |                                               ^~~~~
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
 In file included from ../Core/Src/main.c:21:
 c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    41 | size_t  strlen (const char *);
       |                 ^~~~~~~~~~~~
-../Core/Src/main.c:115:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
-  115 |      HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
-      |                                              ^~~
-      |                                              |
-      |                                              uint8_t * {aka unsigned char *}
-In file included from ../Core/Src/main.c:21:
-c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
-   41 | size_t  strlen (const char *);
-      |                 ^~~~~~~~~~~~
-../Core/Src/main.c:119:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
-  119 |      HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
-      |                                              ^~~
-      |                                              |
-      |                                              uint8_t * {aka unsigned char *}
+../Core/Src/main.c:116:43: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  116 |     HAL_UART_Transmit(&huart2, t,  strlen(t), 1000);
+      |                                           ^
+      |                                           |
+      |                                           uint8_t * {aka unsigned char *}
 In file included from ../Core/Src/main.c:21:
 c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    41 | size_t  strlen (const char *);
       |                 ^~~~~~~~~~~~
 ../Core/Src/main.c:120:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
-  120 |      HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
+  120 |      HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
       |                                              ^~~
       |                                              |
       |                                              uint8_t * {aka unsigned char *}
@@ -47,8 +38,8 @@ In file included from ../Core/Src/main.c:21:
 c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    41 | size_t  strlen (const char *);
       |                 ^~~~~~~~~~~~
-../Core/Src/main.c:124:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
-  124 |      HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
+../Core/Src/main.c:121:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  121 |      HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
       |                                              ^~~
       |                                              |
       |                                              uint8_t * {aka unsigned char *}
@@ -57,7 +48,7 @@ c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externalt
    41 | size_t  strlen (const char *);
       |                 ^~~~~~~~~~~~
 ../Core/Src/main.c:125:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
-  125 |      HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
+  125 |      HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
       |                                              ^~~
       |                                              |
       |                                              uint8_t * {aka unsigned char *}
@@ -65,8 +56,8 @@ In file included from ../Core/Src/main.c:21:
 c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    41 | size_t  strlen (const char *);
       |                 ^~~~~~~~~~~~
-../Core/Src/main.c:129:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
-  129 |      HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
+../Core/Src/main.c:126:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  126 |      HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
       |                                              ^~~
       |                                              |
       |                                              uint8_t * {aka unsigned char *}
@@ -75,10 +66,46 @@ c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externalt
    41 | size_t  strlen (const char *);
       |                 ^~~~~~~~~~~~
 ../Core/Src/main.c:130:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
-  130 |      HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
+  130 |      HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
       |                                              ^~~
       |                                              |
       |                                              uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   41 | size_t  strlen (const char *);
+      |                 ^~~~~~~~~~~~
+../Core/Src/main.c:131:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  131 |      HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
+      |                                              ^~~
+      |                                              |
+      |                                              uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   41 | size_t  strlen (const char *);
+      |                 ^~~~~~~~~~~~
+../Core/Src/main.c:135:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  135 |      HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
+      |                                              ^~~
+      |                                              |
+      |                                              uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   41 | size_t  strlen (const char *);
+      |                 ^~~~~~~~~~~~
+../Core/Src/main.c:136:46: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  136 |      HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
+      |                                              ^~~
+      |                                              |
+      |                                              uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:21:
+c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   41 | size_t  strlen (const char *);
+      |                 ^~~~~~~~~~~~
+../Core/Src/main.c:138:47: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  138 |     HAL_UART_Transmit(&huart2, enter,  strlen(enter), 1000);
+      |                                               ^~~~~
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
 In file included from ../Core/Src/main.c:21:
 c:\st\stm32cubeide_1.8.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.0.202111181127\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
    41 | size_t  strlen (const char *);
@@ -89,11 +116,11 @@ Finished building target: stm_proj_demo1.elf
 arm-none-eabi-size   stm_proj_demo1.elf 
 arm-none-eabi-objdump -h -S  stm_proj_demo1.elf  > "stm_proj_demo1.list"
    text	   data	    bss	    dec	    hex	filename
-   9208	     20	   1708	  10936	   2ab8	stm_proj_demo1.elf
+   9324	     20	   1708	  11052	   2b2c	stm_proj_demo1.elf
 Finished building: default.size.stdout
  
 Finished building: stm_proj_demo1.list
  
 
-08:59:21 Build Finished. 0 errors, 9 warnings. (took 1s.189ms)
+20:16:03 Build Finished. 0 errors, 12 warnings. (took 1s.167ms)
 

@@ -60,7 +60,7 @@ void loop() {
     //Serial.print(" bytes waiting");
     int x = NodeSerial.read();
     char xx = x;
-    if (x==0) break;
+    if (x==0 || x>127) break;
     strcat(str,&xx);
     //Serial.print(xx);
   }

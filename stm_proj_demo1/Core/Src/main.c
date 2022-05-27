@@ -93,8 +93,9 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  uint8_t b[] = "STM Started ";
-  HAL_UART_Transmit(&huart2, b,  sizeof(b), 1000);
+  uint8_t start[] = "STM Started ";
+  uint8_t enter[] = "\r\n";
+  HAL_UART_Transmit(&huart2, start,  sizeof(start), 1000);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -104,10 +105,15 @@ int main(void)
 	  uint8_t data[1];
 	  if(HAL_UART_Receive(&huart1, data, sizeof(data), 5000)==HAL_OK) {
 
-		  uint8_t s[] = "This thing below came...\r\n";
+		  uint8_t s[] = "This thing came ---> ";
 		  HAL_UART_Transmit(&huart2, s,  strlen(s), 1000);
 
 		  HAL_UART_Transmit(&huart2, data,  1, 1000);
+
+		  HAL_UART_Transmit(&huart2, enter,  strlen(enter), 1000);
+
+		  uint8_t t[] = "STM Transmit ---> ";
+		  HAL_UART_Transmit(&huart2, t,  strlen(t), 1000);
 
 		  if (data[0]=='l') {
 			  uint8_t str[] = "l69";
@@ -115,12 +121,12 @@ int main(void)
 			  HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
 		  }
 		  else if (data[0]=='d') {
-			  uint8_t str[] = "dht_info";
+			  uint8_t str[] = "d69";
 			  HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
 			  HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
 		  }
 		  else if (data[0]=='D') {
-			  uint8_t str[] = "dust_info";
+			  uint8_t str[] = "D69";
 			  HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
 			  HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
 		  }
@@ -129,6 +135,7 @@ int main(void)
 			  HAL_UART_Transmit(&huart2, str,  strlen(str), 1000);
 			  HAL_UART_Transmit(&huart1, str,  strlen(str), 1000);
 		  }
+		  HAL_UART_Transmit(&huart2, enter,  strlen(enter), 1000);
 
 	  }
 
