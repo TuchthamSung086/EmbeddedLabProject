@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_esp8266_nodemcu_v3_connection Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_uart_esp Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_esp_to_stm Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_esp8266_nodemcu_v3_connection Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_uart_esp Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_esp_to_stm Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm_proj_demo1 Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_esp8266_nodemcu_v3_connection\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test_esp8266_nodemcu_v3_connection\ Debug/activeLaunchTarget=null\:---
