@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "DHT.h"
+#include <stdbool.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -40,17 +41,21 @@
 
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
+DMA_HandleTypeDef hdma_adc1;
 
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 char buf[100] = "";
+uint32_t value[2];
+bool dwm_lock = false;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_DMA_Init(void);
 static void MX_ADC1_Init(void);
 /* USER CODE BEGIN PFP */
 
@@ -58,27 +63,6 @@ static void MX_ADC1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
-
-uint32_t adc_poll() {
-  HAL_ADC_Start(&hadc1);
-  HAL_ADC_PollForConversion(&hadc1, 1000);
-  return HAL_ADC_GetValue(&hadc1);
-}
-
-
-uint32_t poll_ldr() {
-	return adc_poll();
-}
-
-
-DHT_DataTypedef poll_dht() {
-	// https://controllerstech.com/using-dht11-sensor-with-stm32/
-	DHT_DataTypedef data;
-	DHT_GetData(&data);
-	return data;
-}
-
 __STATIC_INLINE void delay(volatile uint32_t microseconds)
 {
   uint32_t clk_cycle_start = DWT->CYCCNT;
@@ -89,6 +73,53 @@ __STATIC_INLINE void delay(volatile uint32_t microseconds)
   /* Delay till end */
   while ((DWT->CYCCNT - clk_cycle_start) < microseconds);
 }
+
+DHT_DataTypedef poll_dht() {
+	// https://controllerstech.com/using-dht11-sensor-with-stm32/
+	DHT_DataTypedef data;
+	DHT_GetData(&data);
+	return data;
+}
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+{
+	// https://controllerstech.com/stm32-adc-multiple-channels/
+
+	uint32_t analog_ldr = value[0];
+	uint32_t analog_dust = value[1];
+
+
+	// https://maker.pro/arduino/projects/arduino-uno-sharp-dust-sensor-tutorial
+	delay(40);
+	HAL_GPIO_WritePin(Dust_LED_GPIO_Port, Dust_LED_Pin, GPIO_PIN_SET);
+	/*float volt_dust = analog_dust * (5.0/4096.0);
+	float dust_density = 0.17*volt_dust-0.1;
+
+	int len = sprintf(buf, "%d %d\r\n", analog_ldr, (int)(1000*volt_dust));
+	HAL_UART_Transmit(&huart2, buf, len, 1000);*/
+
+	dwm_lock = false;
+}
+
+
+typedef struct
+{
+	uint32_t ldr;
+	uint32_t dust;
+} Analog;
+
+Analog poll_analog() {
+	dwm_lock = true;
+	HAL_GPIO_WritePin(Dust_LED_GPIO_Port, Dust_LED_Pin, GPIO_PIN_RESET);
+	delay(280);
+	HAL_ADC_Start_DMA(&hadc1, value, 2);
+	while(dwm_lock) {}
+	Analog out;
+	out.ldr = value[0];
+	out.dust = value[1];
+	return out;
+}
+
 
 /* USER CODE END 0 */
 
@@ -121,6 +152,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+  MX_DMA_Init();
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
   // HAL_Delay(3000);
@@ -137,15 +169,21 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  HAL_Delay(3000);
 	  DHT_DataTypedef dht = poll_dht();
+	  Analog analog = poll_analog();
+
+
 	  float temp = dht.Temperature;
 	  float hum = dht.Humidity;
 
-	  uint32_t ldr = poll_ldr();
-
-
-	  int len = sprintf(buf, "%d %d %d\r\n", (int)(temp), (int)(hum), ldr);
+	  int len = sprintf(
+			  buf,
+			  "temp=%d humidity=%d ldr=%d dust=%d\r\n",
+			  (int)(temp),
+			  (int)(hum),
+			  analog.ldr,
+			  analog.dust
+	  );
 	  HAL_UART_Transmit(&huart2, buf, len, 1000);
-	  // HAL_Delay(3000);
   }
   /* USER CODE END 3 */
 }
@@ -216,13 +254,13 @@ static void MX_ADC1_Init(void)
   hadc1.Instance = ADC1;
   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
   hadc1.Init.Resolution = ADC_RESOLUTION_12B;
-  hadc1.Init.ScanConvMode = DISABLE;
+  hadc1.Init.ScanConvMode = ENABLE;
   hadc1.Init.ContinuousConvMode = DISABLE;
   hadc1.Init.DiscontinuousConvMode = DISABLE;
   hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc1.Init.NbrOfConversion = 1;
+  hadc1.Init.NbrOfConversion = 2;
   hadc1.Init.DMAContinuousRequests = DISABLE;
   hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
@@ -234,6 +272,14 @@ static void MX_ADC1_Init(void)
   sConfig.Channel = ADC_CHANNEL_1;
   sConfig.Rank = 1;
   sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+  */
+  sConfig.Channel = ADC_CHANNEL_6;
+  sConfig.Rank = 2;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -278,6 +324,22 @@ static void MX_USART2_UART_Init(void)
 }
 
 /**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA2_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA2_Stream0_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA2_Stream0_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream0_IRQn);
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -293,7 +355,7 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LD2_Pin|Dust_LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -301,12 +363,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : LD2_Pin */
-  GPIO_InitStruct.Pin = LD2_Pin;
+  /*Configure GPIO pins : LD2_Pin Dust_LED_Pin */
+  GPIO_InitStruct.Pin = LD2_Pin|Dust_LED_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
 }
 
