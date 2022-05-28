@@ -192,27 +192,27 @@ int main(void)
 		  if (data[0]=='l') {
 			  // ldr
 			  Analog analog = poll_analog();
-			  sprintf(buf, "%d", analog.ldr);
+			  sprintf(buf, "l %d", analog.ldr);
 			  HAL_UART_Transmit(&huart2, buf,  strlen(buf), 1000);
 			  HAL_UART_Transmit(&huart1, buf,  strlen(buf), 1000);
 		  }
 		  else if (data[0]=='d') {
 			  // dht
 			  DHT_DataTypedef dht = poll_dht();
-			  sprintf(buf, "%d %d", (int)(dht.Temperature), (int)(dht.Humidity));
+			  sprintf(buf, "d %d %d", (int)(dht.Temperature), (int)(dht.Humidity));
 			  HAL_UART_Transmit(&huart2, buf,  strlen(buf), 1000);
 			  HAL_UART_Transmit(&huart1, buf,  strlen(buf), 1000);
 		  }
 		  else if (data[0]=='D') {
 			  // dust
 			  Analog analog = poll_analog();
-			  sprintf(buf, "%d", analog.dust);
+			  sprintf(buf, "D %d", analog.dust);
 			  HAL_UART_Transmit(&huart2, buf,  strlen(buf), 1000);
 			  HAL_UART_Transmit(&huart1, buf,  strlen(buf), 1000);
 		  }
 		  else if (data[0]=='h') {
 			  // hello (test)
-			  uint8_t str[] = "69";
+			  uint8_t str[] = "h 69";
 			  HAL_UART_Transmit(&huart2, buf,  strlen(buf), 1000);
 			  HAL_UART_Transmit(&huart1, buf,  strlen(buf), 1000);
 		  }
