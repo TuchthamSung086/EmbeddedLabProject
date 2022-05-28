@@ -43,6 +43,7 @@
 ADC_HandleTypeDef hadc1;
 DMA_HandleTypeDef hdma_adc1;
 
+UART_HandleTypeDef huart1;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
@@ -57,6 +58,7 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_DMA_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -154,9 +156,16 @@ int main(void)
   MX_USART2_UART_Init();
   MX_DMA_Init();
   MX_ADC1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
   // HAL_Delay(3000);
   DWT_Delay_Init();
+
+  uint8_t start[] = "STM Started ";
+  uint8_t enter[] = "\r\n";
+  HAL_UART_Transmit(&huart2, start,  sizeof(start), 1000);
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -167,6 +176,50 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  uint8_t data[1];
+	  if(HAL_UART_Receive(&huart1, data, sizeof(data), 5000)==HAL_OK) {
+
+		  uint8_t s[] = "This thing came ---> ";
+		  HAL_UART_Transmit(&huart2, s,  strlen(s), 1000);
+
+		  HAL_UART_Transmit(&huart2, data,  1, 1000);
+
+		  HAL_UART_Transmit(&huart2, enter,  strlen(enter), 1000);
+
+		  uint8_t t[] = "STM Transmit ---> ";
+		  HAL_UART_Transmit(&huart2, t,  strlen(t), 1000);
+
+		  if (data[0]=='l') {
+			  // ldr
+			  Analog analog = poll_analog();
+			  sprintf(buf, "%d", analog.ldr);
+			  HAL_UART_Transmit(&huart2, buf,  strlen(buf), 1000);
+			  HAL_UART_Transmit(&huart1, buf,  strlen(buf), 1000);
+		  }
+		  else if (data[0]=='d') {
+			  // dht
+			  DHT_DataTypedef dht = poll_dht();
+			  sprintf(buf, "%d %d", (int)(dht.Temperature), (int)(dht.Humidity));
+			  HAL_UART_Transmit(&huart2, buf,  strlen(buf), 1000);
+			  HAL_UART_Transmit(&huart1, buf,  strlen(buf), 1000);
+		  }
+		  else if (data[0]=='D') {
+			  // dust
+			  Analog analog = poll_analog();
+			  sprintf(buf, "%d", analog.dust);
+			  HAL_UART_Transmit(&huart2, buf,  strlen(buf), 1000);
+			  HAL_UART_Transmit(&huart1, buf,  strlen(buf), 1000);
+		  }
+		  else if (data[0]=='h') {
+			  // hello (test)
+			  uint8_t str[] = "69";
+			  HAL_UART_Transmit(&huart2, buf,  strlen(buf), 1000);
+			  HAL_UART_Transmit(&huart1, buf,  strlen(buf), 1000);
+		  }
+		  HAL_UART_Transmit(&huart2, enter,  strlen(enter), 1000);
+	  }
+
+/*
 	  HAL_Delay(3000);
 	  DHT_DataTypedef dht = poll_dht();
 	  Analog analog = poll_analog();
@@ -183,7 +236,7 @@ int main(void)
 			  analog.ldr,
 			  analog.dust
 	  );
-	  HAL_UART_Transmit(&huart2, buf, len, 1000);
+	  HAL_UART_Transmit(&huart2, buf, len, 1000);*/
   }
   /* USER CODE END 3 */
 }
@@ -287,6 +340,39 @@ static void MX_ADC1_Init(void)
   /* USER CODE BEGIN ADC1_Init 2 */
 
   /* USER CODE END ADC1_Init 2 */
+
+}
+
+/**
+  * @brief USART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART1_Init 0 */
+
+  /* USER CODE END USART1_Init 0 */
+
+  /* USER CODE BEGIN USART1_Init 1 */
+
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = 115200;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART1_Init 2 */
+
+  /* USER CODE END USART1_Init 2 */
 
 }
 
