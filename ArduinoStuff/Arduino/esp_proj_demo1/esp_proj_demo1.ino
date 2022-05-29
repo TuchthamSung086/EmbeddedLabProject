@@ -33,8 +33,8 @@
 // Set these to run example.
 #define FIREBASE_HOST "embedded-lab-project-default-rtdb.asia-southeast1.firebasedatabase.app"
 #define FIREBASE_AUTH "rmzdZbUALOfixTPyV7Xk1F1YVGqm3mNVSgh3IoyO"
-#define WIFI_SSID "TrueGigatexFiber_2.4GX77" // "Spamma 5G" / "Touchy's" / "TrueGigatexFiber_2.4GX77"
-#define WIFI_PASSWORD "TouchPloy38" // "0917191691" / "sleepisfortheweak" / "TouchPloy38"
+#define WIFI_SSID "Chitthamlerd-2.4" // "Spamma 5G" / "Touchy's" / "TrueGigatexFiber_2.4GX77"
+#define WIFI_PASSWORD "9029902990" // "0917191691" / "sleepisfortheweak" / "TouchPloy38"
 
 // Set my own variables
 SoftwareSerial NodeSerial(D2, D3); // RX | TX
@@ -50,6 +50,7 @@ void setupESP() {
 void setup() {
   Serial.begin(115200);
 
+  Serial.println("Starting");
   // connect to wifi.
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   Serial.print("connecting");
@@ -63,6 +64,7 @@ void setup() {
   setupESP();
   
   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
+  delay(1000);
 }
 
 void loop() {
@@ -81,27 +83,36 @@ void ldrRq() {
   Serial.println("Requesting LDR...");
   String rq = "l";
   String data = "";
-  sendUART(NodeSerial, rq);
-  data = readUART(NodeSerial);
-  //firebaseSetString("ldr",data);
+  while(data.length()==0) {
+    sendUART(NodeSerial, rq);
+    data = readUART(NodeSerial);
+    delay(1000);
+  }
+  firebasePush(data);
 }
 
 void dhtRq() {
   Serial.println("Requesting DHT...");
   String rq = "d";
   String data = "";
-  sendUART(NodeSerial, rq);
-  data = readUART(NodeSerial);
-  //firebaseSetString("ldr",data);
+  while(data.length()==0) {
+    sendUART(NodeSerial, rq);
+    data = readUART(NodeSerial);
+    delay(1000);
+  }
+  firebasePush(data);
 }
 
 void dustRq() {
   Serial.println("Requesting DUST...");
   String rq = "D";
   String data = "";
-  sendUART(NodeSerial, rq);
-  data = readUART(NodeSerial);
-  //firebaseSetString("ldr",data);
+  while(data.length()==0) {
+    sendUART(NodeSerial, rq);
+    data = readUART(NodeSerial);
+    delay(1000);
+  }
+  firebasePush(data);
 }
 
 void sendUART(SoftwareSerial &NodeSerial, String &str) {
@@ -136,6 +147,13 @@ String readUART(SoftwareSerial &NodeSerial) {
   Serial.print("readUART returns ");
   Serial.println(result);
   return result;
+}
+
+void firebasePush(String &data) {
+  String opCode = String(data[0]);
+  String text = data.substring(2);
+
+  firebaseSetString(opCode, text);  
 }
 
 void firebaseSetString(String &key, String &str) {
