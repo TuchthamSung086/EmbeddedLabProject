@@ -15,7 +15,7 @@ Our realtime database Firebase link: https://embedded-lab-project-default-rtdb.a
 - https://controllerstech.com/using-dht11-sensor-with-stm32/ : DHT11 library
 - https://maker.pro/arduino/projects/arduino-uno-sharp-dust-sensor-tutorial : Dust sensor code
 - https://controllerstech.com/ir-remote-with-stm32/ : Explain air Conditoner IR protocol, TSOP sensor, pesudocode sample
-
+- https://controllerstech.com/stm32-adc-multiple-channels/: Reading mutliple analog device using DMA
 ## Our equipments
 Touchy: USB to mini-USB wire (very important, got it from a friend AKA SirateeK) , ESP8299 V3, STM32 Board
 
