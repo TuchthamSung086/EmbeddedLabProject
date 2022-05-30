@@ -38,6 +38,7 @@
 
 // Set my own variables
 SoftwareSerial NodeSerial(D2, D3); // RX | TX
+SoftwareSerial NodeSerial2(D5, D6); // RX | TX
 
 void setupESP() {
   pinMode(D2, INPUT);
@@ -67,53 +68,59 @@ void setup() {
   delay(1000);
 }
 
+int last_vel = -1;
+void pollFirebase() {
+  int vel = Firebase.getFloat("speed");
+  if(last_vel == vel) {
+    return;
+  }
+  last_vel = vel;
+
+
+  NodeSerial.write('f');
+  delay(500);
+  char buf[4];
+  sprintf(buf, "%03d", vel);
+  Serial.println(buf);
+  NodeSerial.write(buf);
+}
+
+
 void loop() {
 //  String rq = "h";
 //  sendUART(NodeSerial, rq);
 //  readUART(NodeSerial); 
-  ldrRq();
+  Rq('l', "ldr");
+  for(int i=0; i<=1000; i+=500) {
+    pollFirebase();
+    delay(500);
+  }
+  Rq('d', "DHT");
+  for(int i=0; i<=1000; i+=500) {
+    pollFirebase();
+    delay(500);
+  }
   delay(1000);
-  dhtRq();
-  delay(1000);
-  dustRq();
+  Rq('D', "Dust");
+  for(int i=0; i<=1000; i+=500) {
+    pollFirebase();
+    delay(500);
+  }
   delay(1000);
 }
 
-void ldrRq() {
-  Serial.println("Requesting LDR...");
-  String rq = "l";
+void Rq(char rq, const String& name) {
+  Serial.printf("Requesting %s...\n", name.c_str());
   String data = "";
+  String rq_str = String(rq);
   while(data.length()==0) {
-    sendUART(NodeSerial, rq);
+    sendUART(NodeSerial, rq_str);
     data = readUART(NodeSerial);
     delay(1000);
   }
   firebasePush(data);
 }
 
-void dhtRq() {
-  Serial.println("Requesting DHT...");
-  String rq = "d";
-  String data = "";
-  while(data.length()==0) {
-    sendUART(NodeSerial, rq);
-    data = readUART(NodeSerial);
-    delay(1000);
-  }
-  firebasePush(data);
-}
-
-void dustRq() {
-  Serial.println("Requesting DUST...");
-  String rq = "D";
-  String data = "";
-  while(data.length()==0) {
-    sendUART(NodeSerial, rq);
-    data = readUART(NodeSerial);
-    delay(1000);
-  }
-  firebasePush(data);
-}
 
 void sendUART(SoftwareSerial &NodeSerial, String &str) {
   char p[str.length()+1];
