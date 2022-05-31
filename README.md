@@ -1,6 +1,7 @@
 # EmbeddedLabProject
  Mixed Blood at it again
 
+Web App using with this project can be found at [GitHub](https://github.com/KawinM23/EmbeddedLabProjectWebsite).
 Our realtime database Firebase link: https://embedded-lab-project-default-rtdb.asia-southeast1.firebasedatabase.app/
 
 ## Useful Resource
